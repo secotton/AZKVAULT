@@ -95,6 +95,8 @@ if (-not $Requirement)
 Write-Host -ForegroundColor Cyan 'Complete!'
 Write-Verbose 'Starting a new PowerShell process for Get-WindowsAutoPilotInfo' -Verbose
 Start-Sleep -Seconds 3
+Install-Module Az.KeyVault -Force
+Import-module az.keyvault
 Connect-AzAccount
 Start-Sleep -Seconds 3
 #Invoke-Expression (Get-AzKeyVaultSecret -VaultName apkvault -Name apkvault -AsPlainText)
