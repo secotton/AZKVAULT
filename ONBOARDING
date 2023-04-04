@@ -101,6 +101,6 @@ Install-Module AzureAD -Force
 import-module azuread
 Connect-AzAccount
 Start-Sleep -Seconds 3
-#Invoke-Expression (Get-AzKeyVaultSecret -VaultName apkvault -Name apkvault -AsPlainText)
-(Get-AzKeyVaultSecret -VaultName apkvault -Name apkvault -AsPlainText)
+Invoke-Expression (Get-AzKeyVaultSecret -VaultName apkvault -Name apkvault -AsPlainText)
+#(Get-AzKeyVaultSecret -VaultName apkvault -Name apkvault -AsPlainText)
 #Start-Process PowerShell.exe -ArgumentList '-NoLogo'
