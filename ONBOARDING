@@ -97,6 +97,8 @@ Write-Verbose 'Starting a new PowerShell process for Get-WindowsAutoPilotInfo' -
 Start-Sleep -Seconds 3
 Install-Module Az.KeyVault -Force
 Import-module az.keyvault
+Install-Module AzureAD -Force
+import-module azuread
 Connect-AzAccount
 Start-Sleep -Seconds 3
 #Invoke-Expression (Get-AzKeyVaultSecret -VaultName apkvault -Name apkvault -AsPlainText)
