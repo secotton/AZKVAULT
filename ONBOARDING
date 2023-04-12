@@ -83,7 +83,7 @@ if (-not $Requirement)
 #=================================================
 #	Get-WindowsAutoPilotInfo
 #=================================================
-$Requirement = Get-InstalledScript -Name Get-WindowsAutoPilotInfod -ErrorAction SilentlyContinue
+$Requirement = Get-InstalledScript -Name Get-WindowsAutoPilotInfo -ErrorAction SilentlyContinue
 if (-not $Requirement)
 {
     Write-Host -ForegroundColor Cyan 'Install-Script Get-WindowsAutoPilotInfo'
